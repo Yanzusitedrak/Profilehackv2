@@ -6,7 +6,7 @@
   "i_user": "",
   "proxy": null,
   "userAgent": "Mozilla/5.0 (Linux; Android 12; M2102J20SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36",
-  "intervalGetNewCookie": 1440,
+  "intervalGetNewCookie": 4320,
   "notes": "time the system automatically retrieves new cookies from email/password, unit is minute, if you set null, the system will not automatically retrieve new cookies, it saves you from having to manually change your cookie every time it expires. recommended set to 1440 (1day) or 4320 (3day).TO BE ABLE TO USE THIS FEATURE YOU NEED TO ENTER THE ACCOUNT PASSWORD ABOVE",
   "antiInbox": false,
   "language": "en",
@@ -16,15 +16,15 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100085330421655"
+    "100052395031835"
   ],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "Artificial Intelligence",
-  "prefix": "-",
+  "nickNameBot": "[ # ] ➩ 𝗟𝗨𝗕𝗢𝗧 𝗡𝗜 𝗞𝗬𝗟𝗘𝗩𝟳",
+  "prefix": "#",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
@@ -35,7 +35,7 @@
   "timeZone": "Asia/Ho_Chi_Minh",
   "credentials": {
     "gmailAccount": {
-      "email": "markleemeniola@gmail.com",
+      "email": "niknobmakshub@gmail.com",
       "clientId": "982523941925-sm544j8mbr0ie6jl4a91gfdsg47ibrcs.apps.googleusercontent.com",
       "clientSecret": "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",
       "refreshToken": "1//04qZNNkc59U8DCgYIARAAGAQSNwF-L9IrGVMGG-1weLI0ZSAtl-nlcryJj0YIZ1mCyWV9au1SJ27ZLLMU8t-e9DkV-Aemob-fPK8",
