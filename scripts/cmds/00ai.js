@@ -2,7 +2,8 @@ const axios = require('axios');
 
 const GPT_API_URL = 'https://sandipapi.onrender.com/gpt';
 const PREFIXES = ['ai',"bot","Ai","ai,"];
-const horizontalLine = "━━━━━━━━━━━━━━";
+const horizontalLine = "•❅──────✧❅✦❅✧──────❅•
+";
 
 module.exports = {
   config: {
@@ -29,7 +30,7 @@ module.exports = {
       const prompt = event.body.substring(prefix.length).trim();
 
       if (!prompt) {
-        const defaultMessage = getCenteredHeader("Mark AI | 🤖") + "\n" + horizontalLine + "\nHello! Ask me anything!\n\nContact my owner if you have any questions or need assistance.\nFb Link:https://www.facebook.com/markflurry.25\n" + horizontalLine;
+        const defaultMessage = getCenteredHeader("𝗞𝗬𝗟𝗘 𝗔𝗜🤖:") + "\n" + horizontalLine + "\nHello! Ask me anything!\n\nContact my owner if you have any questions or need assistance.\nFb Link:https://www.facebook.com/markflurry.25\n" + horizontalLine;
         await message.reply(defaultMessage);
         return;
       }
@@ -37,7 +38,7 @@ module.exports = {
       const answer = await getGPTResponse(prompt);
 
       // Adding header and horizontal lines to the answer
-      const answerWithHeader = getCenteredHeader("Mark AI | 🤖") + "\n" + horizontalLine + "\n" + answer + "\n" + horizontalLine;
+      const answerWithHeader = getCenteredHeader("𝗞𝗬𝗟𝗘 𝗔𝗜🤖:") + "\n" + horizontalLine + "\n" + answer + "\n" + horizontalLine;
 
       await message.reply(answerWithHeader);
     } catch (error) {
