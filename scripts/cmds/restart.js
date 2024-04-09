@@ -27,7 +27,7 @@ module.exports = {
 			restartting: "🔄 | Đang khởi động lại bot..."
 		},
 		en: {
-			restartting: "🔄 | Restarting Bot... please wait"
+			restartting: "♻️ | 𝗥𝗘𝗦𝗧𝗔𝗥𝗧𝗜𝗡𝗚 𝗕𝗢𝗧----𝗣𝗟𝗘𝗔𝗦𝗘 𝗪𝗔𝗜𝗧....."
 		}
 	},
 
@@ -35,7 +35,7 @@ module.exports = {
 		const pathFile = `${__dirname}/tmp/restart.txt`;
 		if (fs.existsSync(pathFile)) {
 			const [tid, time] = fs.readFileSync(pathFile, "utf-8").split(" ");
-			api.sendMessage(`✅ | Bot restarted\n⏰ | Time: ${(Date.now() - time) / 1000}s\n👦 | Created By Mark`, tid);
+			api.sendMessage(`❍≻───── ⋆✩⋆ ─────≺❍\n✅ | Bot restarted\n⏰ | Time: ${(Date.now() - time) / 1000}s\n\n👤 | Created By 𝗞𝗬𝗟𝗘 𝗕𝗔𝗜𝗧-𝗜𝗧\n❍≻───── ⋆✩⋆ ─────≺❍`, tid);
 			fs.unlinkSync(pathFile);
 		}
 	},
